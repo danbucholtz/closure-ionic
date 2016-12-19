@@ -21,7 +21,8 @@
     "@danbucholtz/zone.js": "0.7.3"
   },
   "scripts": {
-    "build": "ngc && ./build_closure.sh"
+    "build": "npm run clean && ngc && ./build_closure.sh",
+    "clean": "rm -rf dist && rm -rf built && find src -name *.ngfactory* -delete && find src -name *.ngsummary* -delete"
   },
   "author": "Alex Eagle <alexeagle@google.com> (https://angularjs.org/)",
   "license": "MIT"

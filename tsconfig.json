@@ -13,6 +13,11 @@
         "outDir": "built",
         "declaration": true
     },
+    "include": [
+        "./src/*.d.ts",
+        "./src/app.module.ts",
+        "./src/bootstrap.ts"
+    ],
     "exclude": [
         "vendor",
         "node_modules",
