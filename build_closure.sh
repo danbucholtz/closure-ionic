@@ -13,9 +13,10 @@ OPTS=(
   "node_modules/@danbucholtz/zone.js/dist/browser/*.js"
   "node_modules/@danbucholtz/zone.js/dist/common/*.js"
   $(find vendor/rxjs -name *.js)
+  $(find node_modules/ionic-angular -name *.js)
   # " -name *.js | grep -v .min.js)
-  node_modules/@angular/{core,common,compiler,platform-browser}/index.js
-  $(find node_modules/@angular/{core,common,compiler,platform-browser}/src -name *.js)
+  node_modules/@angular/{core,common,compiler,http,platform-browser}/index.js
+  $(find node_modules/@angular/{core,common,compiler,http,platform-browser}/src -name *.js)
   "built/*.js"
 )
 set -ex
