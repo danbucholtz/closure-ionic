@@ -13,7 +13,7 @@ OPTS=(
   "node_modules/@danbucholtz/zone.js/dist/browser/*.js"
   "node_modules/@danbucholtz/zone.js/dist/common/*.js"
   $(find vendor/rxjs -name *.js)
-  $(find node_modules/ionic-angular/es2015 -name *.js)
+  #$(find node_modules/ionic-angular/es2015 -name *.js)
   # " -name *.js | grep -v .min.js)
   node_modules/@angular/{core,common,compiler,http,platform-browser}/index.js
   $(find node_modules/@angular/{core,common,compiler,http,platform-browser}/src -name *.js)
